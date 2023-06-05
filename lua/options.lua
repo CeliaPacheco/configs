@@ -4,7 +4,7 @@ HOME = os.getenv("HOME")
 -- interface appearance
 vim.opt.number = true --show line numbers
 vim.opt.rnu = true --show relative line numbers
-vim.opt.ruler = true --show current potition; indenting
+vim.opt.ruler = true --show current position; indenting
 vim.opt.expandtab = true --set tabs to spaces
 vim.opt.tabstop = 4 --make each tab 4 spaces
 vim.opt.shiftwidth = 4 --number of spaces to use for automatic indentation
@@ -24,5 +24,6 @@ vim.opt.directory = HOME .. "/.vim/swp/"
 local options = { noremap = true }
 vim.keymap.set("i", "jj", "<Esc>", options)
 
-
+-- colorsheme
+vim.cmd('colorscheme dracula')
 
